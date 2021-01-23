@@ -2,14 +2,12 @@
 > Cute little python module full of magic and wonder.
 
 
-This file will become your README and also the index of your documentation.
-
 ## Install
 
 `pip install mages`
 
 ## How to use
 
-Type mages into your command line:
+Type mages into your command line to play the game:
 
 `mages`

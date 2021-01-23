@@ -21,11 +21,10 @@ jobs:
       env:
         TWINE_USERNAME: ${{secrets.PYPI_USERNAME}}
         TWINE_PASSWORD: ${{secrets.PYPI_PASSWORD}}
-        TWINE_REPOSITORY: testpypi
+        TWINE_REPOSITORY: pypi
       run: |
         make release
-        nbdev_bump_version
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Update version number
-        branch: main
+        branch: master
