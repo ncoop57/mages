@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: main
+        ref: master
     - uses: actions/setup-python@v1
       with:
         python-version: '3.6'
@@ -24,6 +24,7 @@ jobs:
         TWINE_REPOSITORY: testpypi
       run: |
         make release
+        nbdev_bump_version
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Update version number
