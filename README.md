@@ -1,4 +1,17 @@
-# nbdev template
+# Mages
+> Cute little python module full of magic and wonder.
 
-Use this template to more easily create your [nbdev](https://nbdev.fast.ai/) project.
 
+This file will become your README and also the index of your documentation.
+
+## Install
+
+`pip install mages`
+
+## How to use
+
+Fill me in please! Don't forget code examples:
+
+Type mages into your command line:
+
+`mages`
