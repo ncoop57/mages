@@ -132,6 +132,78 @@ nb_path: "00_characters.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">NAME</span> <span class="o">=</span> <span class="s2">&quot;Nathan&quot;</span>
+<span class="n">MAX_HEALTH</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">ABILITY</span> <span class="o">=</span> <span class="n">Ability</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;water&quot;</span><span class="p">)</span>
+
+<span class="n">mage</span> <span class="o">=</span> <span class="n">Mage</span><span class="p">(</span><span class="n">NAME</span><span class="p">,</span> <span class="n">MAX_HEALTH</span><span class="p">,</span> <span class="n">ABILITY</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mage</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="n">mage</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="n">NAME</span>
+<span class="k">assert</span> <span class="n">mage</span><span class="o">.</span><span class="n">max_health</span> <span class="o">==</span> <span class="n">MAX_HEALTH</span>
+<span class="k">assert</span> <span class="n">mage</span><span class="o">.</span><span class="n">current_health</span> <span class="o">==</span> <span class="n">MAX_HEALTH</span>
+<span class="k">assert</span> <span class="n">mage</span><span class="o">.</span><span class="n">ability</span> <span class="o">==</span> <span class="n">ABILITY</span>
+<span class="k">assert</span> <span class="n">mage</span><span class="o">.</span><span class="n">level</span> <span class="o">==</span> <span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Nathan&#39;s Current Health: 100
+        Nathan&#39;s Max Health: 100
+        Nathan&#39;s Ability Damage: 10
+        Nathan&#39;s Ability Type: water
+        
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">MAX_HEALTH</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">ABILITY_DAMAGE</span> <span class="o">=</span> <span class="mi">20</span>
+
+<span class="n">mage</span><span class="o">.</span><span class="n">level_up</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mage</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="n">mage</span><span class="o">.</span><span class="n">max_health</span> <span class="o">==</span> <span class="n">MAX_HEALTH</span>
+<span class="k">assert</span> <span class="n">mage</span><span class="o">.</span><span class="n">current_health</span> <span class="o">==</span> <span class="n">MAX_HEALTH</span>
+<span class="k">assert</span> <span class="n">mage</span><span class="o">.</span><span class="n">ability</span><span class="o">.</span><span class="n">damage</span> <span class="o">==</span> <span class="n">ABILITY_DAMAGE</span>
+<span class="k">assert</span> <span class="n">mage</span><span class="o">.</span><span class="n">level</span> <span class="o">==</span> <span class="mi">2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
 
 <div class="output_wrapper">
 <div class="output">
@@ -167,44 +239,17 @@ nb_path: "00_characters.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mage</span> <span class="o">=</span> <span class="n">Mage</span><span class="p">(</span><span class="s2">&quot;Nathan&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">Ability</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;water&quot;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">mage</span><span class="p">)</span>
-</pre></div>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">NAME</span> <span class="o">=</span> <span class="s2">&quot;Terry&quot;</span>
+<span class="n">MAX_HEALTH</span> <span class="o">=</span> <span class="mi">100</span>
 
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>        Nathan&#39;s Current Health: 100
-        Nathan&#39;s Max Health: 100
-        Nathan&#39;s Ability Damage: 10
-        Nathan&#39;s Ability Type: water
-        
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">demon</span> <span class="o">=</span> <span class="n">Demon</span><span class="p">(</span><span class="s2">&quot;Terry&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">demon</span> <span class="o">=</span> <span class="n">Demon</span><span class="p">(</span><span class="n">NAME</span><span class="p">,</span> <span class="n">MAX_HEALTH</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">demon</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="n">demon</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="n">NAME</span>
+<span class="k">assert</span> <span class="n">demon</span><span class="o">.</span><span class="n">max_health</span> <span class="o">==</span> <span class="n">MAX_HEALTH</span>
+<span class="k">assert</span> <span class="n">demon</span><span class="o">.</span><span class="n">current_health</span> <span class="o">==</span> <span class="n">MAX_HEALTH</span>
+<span class="k">assert</span> <span class="n">demon</span><span class="o">.</span><span class="n">ability</span><span class="o">.</span><span class="n">damage</span> <span class="o">==</span> <span class="mi">10</span>
+<span class="k">assert</span> <span class="n">demon</span><span class="o">.</span><span class="n">ability</span><span class="o">.</span><span class="n">damage_type</span> <span class="o">==</span> <span class="s2">&quot;fire&quot;</span>
 </pre></div>
 
     </div>
@@ -217,7 +262,7 @@ nb_path: "00_characters.ipynb"
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>        Terry&#39;s Current Health: 100
+<pre>Terry&#39;s Current Health: 100
         Terry&#39;s Max Health: 100
         Terry&#39;s Ability Damage: 10
         Terry&#39;s Ability Type: fire
@@ -239,8 +284,13 @@ nb_path: "00_characters.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mage</span><span class="o">.</span><span class="n">attack</span><span class="p">(</span><span class="n">demon</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">CURR_HEALTH</span> <span class="o">=</span> <span class="mi">90</span>
+
+<span class="n">mage</span><span class="o">.</span><span class="n">attack</span><span class="p">(</span><span class="n">demon</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">demon</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="n">demon</span><span class="o">.</span><span class="n">max_health</span> <span class="o">==</span> <span class="n">MAX_HEALTH</span>
+<span class="k">assert</span> <span class="n">demon</span><span class="o">.</span><span class="n">current_health</span> <span class="o">==</span> <span class="n">CURR_HEALTH</span>
 </pre></div>
 
     </div>
@@ -278,6 +328,9 @@ nb_path: "00_characters.ipynb"
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">demon</span><span class="o">.</span><span class="n">attack</span><span class="p">(</span><span class="n">mage</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">mage</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="n">mage</span><span class="o">.</span><span class="n">max_health</span> <span class="o">==</span> <span class="n">MAX_HEALTH</span>
+<span class="k">assert</span> <span class="n">mage</span><span class="o">.</span><span class="n">current_health</span> <span class="o">==</span> <span class="n">CURR_HEALTH</span>
 </pre></div>
 
     </div>
@@ -317,22 +370,6 @@ nb_path: "00_characters.ipynb"
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Converted 00_characters.ipynb.
-Converted 01_game.ipynb.
-Converted index.ipynb.
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
